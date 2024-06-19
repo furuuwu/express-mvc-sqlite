@@ -1,0 +1,19 @@
+Other things you can do (that i won't be doing here):
+- you can expand on this basic CRUD API and build a whole functional system
+
+a simple one
+https://www.youtube.com/watch?v=W7fHUXQHE_I
+
+probably overkill (since there's already software for that and this is just for practice anyway)
+https://www.youtube.com/watch?v=1YPT6VH256w
+
+- you can use a ORM. eg. Sequelize
+https://sequelize.org/
+
+- you can use Docker
+to run your whole app, or to run sqlite as a server
+https://thriveread.com/sqlite-docker-container-and-docker-compose/
+https://hub.docker.com/r/keinos/sqlite3
+
+- you can manage the database schema as code. eg. Atlas
+https://atlasgo.io/

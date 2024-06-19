@@ -1,0 +1,52 @@
+###
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/api/v1/students
+
+###
+POST http://localhost:3000/api/v1/students/
+Content-Type: application/json
+
+{
+    "name": "Joe",
+    "email": "joe@gmail.com"
+}
+
+###
+POST http://localhost:3000/api/v1/students/
+Content-Type: application/json
+
+{
+    "name": "Frank",
+    "email": "frank@gmail.com",
+    "age": 44
+}
+
+###
+POST http://localhost:3000/api/v1/students/
+Content-Type: application/json
+
+{
+    "name": "Maria",
+    "email": "maria@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/v1/students/2
+
+###
+PUT http://localhost:3000/api/v1/students/5
+Content-Type: application/json
+
+{
+    "name": "Frank",
+    "email": "frank@gmail.com",
+    "age": 44
+}
+
+###
+DELETE http://localhost:3000/api/v1/students/3
+
+###
+DELETE http://localhost:3000/api/v1/students/999999
