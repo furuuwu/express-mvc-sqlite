@@ -1,6 +1,6 @@
 # Express and sqlite
 
-- mostly equal to [this tutorial]("https://www.youtube.com/watch?v=DihOP19LQdg")
+- mostly equal to [this tutorial](https://www.youtube.com/watch?v=DihOP19LQdg)
 
 - differences:
     - sqlite instead of postgresql
@@ -19,7 +19,8 @@
         - "sqlite3": "^5.0.0"
 
         which you can do by running
-        node install
+
+        `node install`
 
     - initialize a database
 
@@ -27,9 +28,10 @@
 
     - go back to the project root and start the app
 
-        node src/server.js
+        `node src/server.js`
 
         or just
 
-        npm start
-        (since i added this script to package.json "start": "node server.js")
+        `npm start`
+
+        (since i added this script to package.json `"start": "node server.js"`)
