@@ -35,3 +35,5 @@
         `npm start`
 
         (since i added this script to package.json `"start": "node server.js"`)
+
+This is just the bare basics tho. After this, i suggest following [this](https://www.youtube.com/watch?v=JnEH9tYLxLk) and [this](https://www.youtube.com/watch?v=K8YELRmUb5o) and building your own projects...
