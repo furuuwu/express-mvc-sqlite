@@ -57,7 +57,7 @@ const addStudent = (req, res) => {
             }
 
             // has been created sucessfully
-            res.status(201).json("Student created successfully!");
+            res.status(201).json({ name, email, age, dob, id: this.lastID });
             console.log("Student created successfully!");
         });
     });
@@ -105,7 +105,7 @@ const updateStudentById = (req, res) => {
     }
     values.push(id);
 
-    const query = `UPDATE students SET ${setClause.join(', ')} WHERE id = ?`;
+    const query = `UPDATE student SET ${setClause.join(', ')} WHERE id = ?`;
 
     // Execute the query
     // you cannot use a arrow function here because you'll need to use `this`
@@ -117,7 +117,15 @@ const updateStudentById = (req, res) => {
         if (this.changes === 0) {
             res.status(404).send('Student not found');
         } else {
-            res.status(200).send('Student updated successfully');
+            // If update successful, fetch the updated student
+            const selectQuery = 'SELECT * FROM student WHERE id = ?';
+            db.get(selectQuery, [id], (err, row) => {
+                if (err) {
+                    res.status(500).send('Error retrieving updated student');
+                } else {
+                    res.status(200).json(row);
+                }
+            });
         }
     });
 };

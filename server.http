@@ -5,6 +5,9 @@ GET http://localhost:3000
 GET http://localhost:3000/api/v1/students
 
 ###
+GET http://localhost:3000/api/v1/classes
+
+###
 POST http://localhost:3000/api/v1/students/
 Content-Type: application/json
 
@@ -50,3 +53,6 @@ DELETE http://localhost:3000/api/v1/students/3
 
 ###
 DELETE http://localhost:3000/api/v1/students/999999
+
+###
+GET http://localhost:3000/api/v1/getStudentsWithClasses/

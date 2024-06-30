@@ -22,5 +22,4 @@ router.post('/', controller.addStudent);
 router.get('/:id', controller.getStudentById);
 router.put('/:id', controller.updateStudentById);
 router.delete('/:id', controller.deleteStudent);
-
 module.exports = router;
